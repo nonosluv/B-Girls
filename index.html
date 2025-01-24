@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulangerie Artisanale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('https://source.unsplash.com/1600x900/?bread,bakery') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        header a {
+            display: inline-block;
+            background: #d2691e;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        header a:hover {
+            background: #a0522d;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about img {
+            max-width: 100%;
+            border-radius: 10px;
+            flex: 1 1 40%;
+        }
+
+        .about div {
+            flex: 1 1 50%;
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d2691e;
+        }
+
+        .products {
+            text-align: center;
+        }
+
+        .products h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #d2691e;
+            margin-bottom: 20px;
+        }
+
+        .products .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .products .grid div {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .products .grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .products .grid h3 {
+            margin: 0;
+            padding: 10px;
+            background: #d2691e;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boulangerie Artisanale</h1>
+        <p>Du pain frais et des viennoiseries faits maison chaque jour.</p>
+        <a href="#about">En savoir plus</a>
+    </header>
+
+    <section id="about" class="about">
+        <img src="https://source.unsplash.com/800x600/?bread" alt="Pain artisanal">
+        <div>
+            <h2>Notre Passion</h2>
+            <p>Depuis 20 ans, notre boulangerie propose des produits faits avec amour et savoir-faire. Chaque ingrédient est soigneusement sélectionné pour garantir une qualité exceptionnelle.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Nos Spécialités</h2>
+        <div class="grid">
+            <div>
+                <img src="https://source.unsplash.com/400x300/?croissant" alt="Croissant">
+                <h3>Croissants</h3>
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/400x300/?baguette" alt="Baguette">
+                <h3>Baguettes</h3>
+            </div>
+            <div>
+                <img src="https://source.unsplash.com/400x300/?pastry" alt="Pâtisseries">
+                <h3>Pâtisseries</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Boulangerie Artisanale. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
